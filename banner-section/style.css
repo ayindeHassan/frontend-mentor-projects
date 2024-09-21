@@ -1,0 +1,36 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+.hero-content{
+    margin: 20px auto;
+    width: 90vw;
+    text-align: center;
+}
+.display-img img{
+    width: 100vw;
+}
+.hero-content a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #fff;
+    margin: 20px 0;
+    background-color: black;
+}
+.brand-partners ul{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    list-style: none;
+    gap: 25px;
+}
+.brand-partners img{
+    width: 100%;
+}
+
