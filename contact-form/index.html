@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./images/—Pngtree—red and brown price tag_16783748.png" type="image/x-icon">
+    <title>contact-form</title>
+</head>
+<body>
+    <main>
+        <section class="submit-msg">
+            <h3>
+                <i class="fa-regular fa-circle-check"></i>
+                <span>Message sent!</span>
+            </h3>
+            <p>Thanks for contacting us, we would reach out to you soon!</p>
+        </section>
+        <section class="login-container">
+            <h1>Contact Us</h1>
+            <form action="index.php" id="Contact-form" novalidate>
+                <div class="input-type-text">
+                    <div>
+                        <label for="">
+                            <span>First Name</span>
+                            <sup><i class="fa-solid fa-asterisk fa-xs"></i>
+                            </sup>
+                        </label>
+                        <input type="text" name="" id="first-name-input">
+                        <span class="error-message" id="first-name-error">This field is required</span>
+                    </div>
+                    <div>
+                        <label for="">
+                            <span>Last Name</span>
+                            <sup><i class="fa-solid fa-asterisk fa-xs"></i></sup>
+                        </label>
+                        <input type="text" name="" id="last-name-input">
+                        <span class="error-message" id="last-name-error">This field is required</span>
+                    </div>
+                </div>
+                <div>
+                    <label for="">
+                        <span>Email Address</span>
+                        <sup><i class="fa-solid fa-asterisk fa-xs"></i></sup>
+                    </label>
+                    <input type="email" name="" id="email-input">
+                    <span class="error-message" id="email-error">Please enter a valid email address</span>
+                </div>
+                <div class="radio-btn-container">
+                    <p>
+                        <span>Query Type</span>
+                        <sup><i class="fa-solid fa-asterisk fa-xs"></i></sup>
+                    </p>
+                    <div>
+                        <input type="radio" name="Query type" id="" class="radio-btn-input">
+                        <label for="">General Enquiry</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="Query type" id="" class="radio-btn-input">
+                        <label for="">Support Request</label>
+                    </div>
+                    <span class="error-message" id="radio-btn-error">Please enter a query type</span>
+                </div>
+                <div>
+                    <label for="">
+                        <span>Message</span>
+                        <sup><i class="fa-solid fa-asterisk fa-xs"></i></sup>
+                    </label>
+                    <textarea name="" id="textarea-input" cols="20" rows="5"></textarea>
+                    <span class="error-message" id="textarea-error">This field is required</span>
+                </div>
+                <div class="checkbox-container">
+                    <input type="checkbox" name="" id="checkbox-input"> 
+                    <label for="">
+                        <span>I consent to being contacted by the team</span>
+                        <sup><i class="fa-solid fa-asterisk fa-xs"></i></sup>
+                    </label>
+                    <span class="error-message" id="checkbox-error">The checkbox is required</span>
+                </div>
+                <button type="submit" id="submit-btn">Submit</button>
+            </form>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
