@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Overpass", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+:root{
+    --orange: hsl(25, 97%, 53%);
+    --dark-blue: hsl(213, 19%, 18%);
+    --light-grey: hsl(217, 12%, 63%);
+    --very-dark-blue: hsl(216, 12%, 8%);
+    --white: hsl(0, 0%, 100%);
+}
+body{
+    background-color: var(--very-dark-blue);
+}
+.component-card{
+    width: 300px;
+    margin: auto;
+    padding: 15px 20px;
+    background-color: var(--dark-blue);
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.before-rating-display img{
+    background-color: var(--light-grey);
+    padding: 10px;
+    border-radius: 50%;
+
+}
+.rating-number{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px;
+}
+.component-card-content h1,
+.component-card-content p{
+    color: var(--light-grey);
+    font-size: 15px;
+}
+.component-card-content button{
+    width: 100%;
+    cursor: pointer;
+    border: none;
+    padding: 5px 0;
+    border-radius: 20px;
+    font-size: medium;
+}
+.component-card-content button:enabled{
+    background-color: var(--orange);
+}
+.component-card-content button:enabled:hover{
+    background-color: var(--white);
+}
+.rating-number li{
+    background-color: var(--light-grey);
+    height: 35px;
+    width: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    border-radius: 50%;
+    cursor: pointer;
+}
+.rating-number li:hover{
+    background-color: var(--orange);
+    color: var(--dark-blue);
+}
+.selected{
+    background-color: var(--white) !important;
+    color: var(--dark-blue) !important;
+}
+.after-rating-display{
+    display: none;
+}
+.after-rating-header{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+}
+.after-rating-header img{
+    text-align: center;
+    width: 120px;
+    margin-bottom: 10px;
+}
+.after-rating-header p{
+    color: var(--orange);
+    background-color: var(--very-dark-blue);
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+.after-rating-content h2{
+    font-size: large;
+}
+.after-rating-content p,h2{
+    color: var(--light-grey);
+    font-size: smaller;
+    line-height: 1.5;
+    text-align: center;
+}
