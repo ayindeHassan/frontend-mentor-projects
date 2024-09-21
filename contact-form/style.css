@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Karla", sans-serif;
+}
+body{
+    background-color: hsl(148, 38%, 91%);
+}
+
+.submit-msg{
+    width: 300px;
+    background-color: hsl(169, 82%, 27%);
+    margin: 7px auto;
+    padding: 15px 10px;
+    z-index: 1999;
+    border-radius: 10px;
+    position: absolute;
+    left: 30vw;
+    top: -100px;
+    color: #f1f1f1;
+    font-size: small;
+}
+.submit-msg h3{
+    margin-bottom: 5px;
+}
+.animation{
+    animation: fade-in 0.5s, fade-out 0.5s 1.5s;
+    animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fade-in{
+    from{
+        top: -100px;
+        opacity: 0;
+    }
+    to{
+        top: 0px;
+        opacity: 1;
+    }
+}
+@-webkit-keyframes fade-out{
+    from{
+        top: 0px;
+        opacity: 1;
+    }
+    to{
+        top: -100px;
+        opacity: 0;
+    }
+}
+
+.login-container{
+    z-index: 1;
+    width: 300px;
+    margin: 30px auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: hsl(0, 0%, 100%);
+}
+.login-container h1{
+    align-self: self-start;
+    margin-bottom: 10px;
+}
+.login-container div{
+    margin: 10px 0;
+}
+.login-container label{
+    display: block;
+    margin-bottom: 7px;
+}
+.login-container input,
+.login-container textarea{
+    outline: 1px solid hsl(169, 82%, 27%);
+
+}
+.login-container input{
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+}
+.login-container input:focus, textarea:focus{
+    outline: 1px solid hsl(187, 24%, 22%);
+}
+.radio-btn-container label,
+.checkbox-container label{
+    display: initial;
+}
+.radio-btn-container input, 
+input[type="checkbox"],
+.radio-btn-container input:focus,
+input[type="checkbox"]:focus{
+    width: initial;
+    outline: none;
+    cursor: pointer;
+    accent-color: hsl(169, 82%, 27%);
+}
+textarea{
+    resize: none;
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+}
+button{
+    width: 100%;
+    padding: 10px;
+    background-color: hsl(169, 82%, 27%);
+    border: none;
+    color: hsl(0, 0%, 100%);
+    border-radius: 7px;
+    cursor: pointer;
+}
+button:hover{
+    background-color:  hsl(187, 24%, 22%);
+}
+.error-message{
+    margin-top: 5px;
+    display: none;
+}
+.show-error-message{
+    display: block;
+    color: hsl(0, 100%, 50%);
+    font-size: x-small;
+}
+sup{
+    color: hsl(169, 82%, 27%)
+}
+@media screen and (min-width: 768px){
+    .login-container{
+        width: 500px;
+    }
+    .login-container h1{
+        align-self: center;
+    }
+    .input-type-text{
+        display: flex;
+        gap: 20px;
+    }
+    .login-container div{
+        margin: 5px 0;
+    }
+}
