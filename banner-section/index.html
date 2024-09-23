@@ -10,25 +10,51 @@
     <main>
         <header>
             <section class="navigation-section">
-                <div>
+                <div class="brand-section">
                     <h1>Snap</h1>
+                    <div class="open-navbar-container">
+                        <img src="./images/icon-menu.svg" alt="" class="open-navbar">
+                    </div>
                 </div>
                 <nav>
+                    <div class="close-navbar-container">
+                        <img src="./images/icon-close-menu.svg" alt="" class="close-navbar">
+                    </div>
                     <div class="navigation-panel">
                         <div class="dropdown-container">
                             <p>Features
-                                <img src="./images/icon-arrow-down.svg" alt="">
+                                <img src="./images/icon-arrow-down.svg" alt="" id="dropdown-arrow">
                             </p>
-                            <ul class="dropdown-content dropdown-items">
-                                <li><a href="">Todo List</a></li>
-                                <li><a href="">Calender</a></li>
-                                <li><a href="">Reminder</a></li>
-                                <li><a href="">Planning</a></li>
+                            <ul class="dropdown-content dropdown-items items-img">
+                                <li>
+                                    <a href="">
+                                        <img src="./images/icon-todo.svg" alt="">
+                                        Todo List
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="./images/icon-calendar.svg" alt="">
+                                        Calender
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="./images/icon-reminders.svg" alt="">
+                                        Reminder
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="./images/icon-planning.svg" alt="">
+                                        Planning
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                         <div class="dropdown-container">
                             <p>company
-                                <img src="./images/icon-arrow-down.svg" alt="">
+                                <img src="./images/icon-arrow-down.svg" alt="" id="dropdown-arrow">
                             </p>
                             <ul class="dropdown-content dropdown-items">
                                 <li><a href="">History</a></li>
@@ -36,10 +62,10 @@
                                 <li><a href="">Blog</a></li>
                             </ul>
                         </div>
-                        <ul>
+                        <ul class="navbar">
                             <li><a href="">Career</a></li>
                         </ul>
-                        <ul>
+                        <ul class="navbar">
                             <li><a href="">About</a></li>
                         </ul>
                     </div>
@@ -52,7 +78,6 @@
             <section class="main-hero">
                 <div class="display-img-container">
                     <img src="./images/image-hero-mobile.png" alt="">
-                    <!-- <img src="./images/image-hero-desktop.png" alt=""> -->
                 </div>
                 <div class="hero-content">
                     <h1>Make <span class="hero-content-display">remote work</span></h1>
